@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from '../components/Home_Hero_Section.jsx.jsx'
 
 function Home() {
   return (
     <div>
-        <h1>WELCOME TO THE HOME PAGE </h1>
+        <HeroSection/>
     </div>
   )
 }
