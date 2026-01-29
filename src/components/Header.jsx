@@ -8,7 +8,7 @@ function Header() {
         <nav id='navigation'>
             <div id='div1'>
               <div id='logo'>
-                <Link><Zap />
+                <Link id='zap_img'><Zap />
                 </Link>
                 </div>
               <div id='devstream'>

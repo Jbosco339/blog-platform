@@ -45,7 +45,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+#zap_img{
+    filter: invert();
 }
 #devstream{
     width: 85%;
@@ -55,6 +57,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #4f46E5;
 }
 
 .home_art{
@@ -87,13 +90,60 @@ body {
 #first_div{
     width: 60%;
     background-color: lightgray;
+    padding-top: 3%;
 }
 #second_div{
     width: 40%;
-    background-color: lightgray;
+    background-color: darkkhaki;
+    padding-top: 3%;
 }
 #live_edit{
     border: 2px solid gray;
-    width: 30%;
-    border-radius: 15px;
+    width: 25%;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#words_matter{
+    font-size: 5.5rem;
+    line-height: 1;
+    padding: 30px 2px
+}
+#modern_standard{
+    font-size: 18px;
+    padding: 15px 5px;
+    color: gray;
+}
+#start_reading{
+    width: 35%;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #4f46E5;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+#become_writer{
+    width: 35%;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+}
+#arrow_img{
+    width: 30px;
+    filter: invert();
+}
+#matter_span{
+    color: #4f46E5;
 }
