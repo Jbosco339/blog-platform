@@ -92,3 +92,8 @@ body {
     width: 40%;
     background-color: lightgray;
 }
+#live_edit{
+    border: 2px solid gray;
+    width: 30%;
+    border-radius: 15px;
+}
