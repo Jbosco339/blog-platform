@@ -24,8 +24,10 @@ function Header() {
             </div>
           
         </nav>
-        
+        <br />
+        <hr className='fullwidth_hr'/>
     </header>
+  
   )
 }
 

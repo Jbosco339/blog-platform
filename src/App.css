@@ -11,30 +11,30 @@ body {
 }
 #header{
     width: 100%;
-    background-color: lightblue;
+    background-color: white;
     padding: 1%;
 }
 #navigation{
     width: 90%;
-    background-color: lightblue;
+    background-color: white;
     margin: auto;
     display: flex;
     padding: 2px;
 }
 #div1{
     width: 24%;
-    background-color: lightblue;
+    background-color: white;
     padding: 1px;
     display: flex;
 }
 #div2{
     width: 43%;
-    background-color: lightblue;
+    background-color: white;
     padding: 5px;
 }
 #div3{
     width: 30%;
-    background-color: lightblue;
+    background-color: white;
     padding: 1px;
     display: flex;
 }
@@ -52,18 +52,18 @@ body {
 #devstream{
     width: 85%;
     font-size: 25px;
-    background-color: lightblue;
+    background-color: white;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4f46E5;
+    color: #0f766e;
 }
 
 .home_art{
     width: 28%;
     font-size: 20px;
-    background-color: lightblue;
+    background-color: white;
     margin: 3px;
     padding: 4px;
     font-weight: bold;
@@ -86,25 +86,34 @@ body {
     width: 90%;
     margin: auto;
     display: flex;
+    margin-bottom: 7%;
 }
 #first_div{
     width: 60%;
-    background-color: lightgray;
+    background-color: white;
     padding-top: 3%;
 }
 #second_div{
     width: 40%;
-    background-color: darkkhaki;
+    background-color: white;
     padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 #live_edit{
-    border: 2px solid gray;
-    width: 25%;
+    border: .5px solid gray;
+    width: 20%;
+    font-weight: 800;
+    color: gray;
     border-radius: 20px;
+    font-size: 12px;
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 #words_matter{
     font-size: 5.5rem;
@@ -115,6 +124,7 @@ body {
     font-size: 18px;
     padding: 15px 5px;
     color: gray;
+    margin-right: 8rem;
 }
 #start_reading{
     width: 35%;
@@ -123,7 +133,7 @@ body {
     border-radius: 10px;
     border: none;
     color: white;
-    background-color: #4f46E5;
+    background-color: #0f766e;
     font-size: 20px;
     font-weight: 800;
     display: inline-flex;
@@ -135,6 +145,7 @@ body {
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
+    background-color: white;
     border: 1px solid gray;
     color: black;
     font-size: 18px;
@@ -145,5 +156,173 @@ body {
     filter: invert();
 }
 #matter_span{
-    color: #4f46E5;
+    color: #0f766e;
+}
+#second_div_inner1{
+    width: 48%;
+    height: 100%;
+    background-color: white;
+    margin: 2px;
+    border-radius: 20px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second_div_inner2{
+    width: 48%;
+    height: 100%;
+    background-color: white;
+    margin: 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second_div_inner12{
+    width: 100%;
+    height: 60%;
+    background-color: #0f766e;
+    margin-bottom: 20%;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+#second_div_inner22{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    margin-top: 20%;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+#star{
+    width: 30px;
+    filter: invert();
+    position: absolute;
+    right: 37%;
+    top: 51%;
+}
+#ai_assisted{
+    position: absolute;
+    right: 31%;
+    top: 58%;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+#layout{
+    width: 30px;
+    position: absolute;
+    right: 18%;
+    top: 61%;
+}
+#adaptive{
+    position: absolute;
+    right: 14%;
+    top: 68%;
+    font-weight: 700;
+    font-size: 20px;  
+}
+.fullwidth_hr{
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* SECTION TWO BEGINS HERE */
+#sec_percentage{
+    width: 100%;
+}
+#sec2_art2{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0px;
+    margin-bottom: 20px;
+}
+.percentage_divs{
+    width: 24%;
+}
+.percentage_header{
+    font-size: 40px;
+    padding: 10px;
+}
+.mini_paragraph{
+    color: gray;
+}
+.sec2_hr{
+    border: .5px solid lightgray;
+}
+
+/* sec2 percentage after section */
+#sec2_main2_div{
+    width: 95%;
+    background-color: lightgreen;
+}
+#first_main{
+    width: 100%;
+    background-color: rgb(148, 232, 221);
+    margin: 1px;
+    text-align: center;
+}
+#second_main{
+    width: 100%;
+    background-color: white;
+    margin: 1px;
+    display: flex;
+}
+#sec2_blackdiv{
+    width: 58%;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    padding-left: 5%;
+    padding-top: 3%;
+    margin: 1%;
+    border-radius: 15px;
+}
+#sec2_purple{
+    width: 28%;
+    height: 200px;
+    background-color: #0f766e;
+    margin: 1%;
+    border-radius: 15px;
+    padding: 5px 30px;
+}
+#watch_ur_story{
+    color: lightgray;
+}
+#real_time{
+    padding-bottom: 3%;
+    font-size: 30px;
+}
+#black_innerdiv{
+    width: 58%;
+}
+#black_div2{
+    width: 28%;
+}
+#security{
+    width: 40px;
+     position: absolute;
+    right: 36%;
+    top: 146%
+}
+#end_end{
+    position: absolute;
+    right: 20%;
+    top: 162%
+}
+#secure_default{
+    position: absolute;
+    right: 27%;
+    top: 156%
+}
+#everything_happy{
+    padding-top: 1%;
+}
+#built_from{
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
