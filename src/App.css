@@ -258,12 +258,12 @@ body {
 
 /* sec2 percentage after section */
 #sec2_main2_div{
-    width: 95%;
-    background-color: lightgreen;
+    width: 90%;
+    background-color: white;
 }
 #first_main{
     width: 100%;
-    background-color: rgb(148, 232, 221);
+    background-color: white;
     margin: 1px;
     text-align: center;
 }
@@ -272,10 +272,13 @@ body {
     background-color: white;
     margin: 1px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #sec2_blackdiv{
     width: 58%;
-    background-color: rgb(51, 50, 50);
+    height: 200px;
+    background-color: rgb(4, 1, 30);
     color: white;
     padding-left: 5%;
     padding-top: 3%;
@@ -283,7 +286,7 @@ body {
     border-radius: 15px;
 }
 #sec2_purple{
-    width: 28%;
+    width: 32%;
     height: 200px;
     background-color: #0f766e;
     margin: 1%;
@@ -292,6 +295,7 @@ body {
 }
 #watch_ur_story{
     color: lightgray;
+    line-height: 1.5;
 }
 #real_time{
     padding-bottom: 3%;
@@ -305,24 +309,62 @@ body {
 }
 #security{
     width: 40px;
-     position: absolute;
-    right: 36%;
-    top: 146%
+    padding-top: 15px;
+    filter: invert();
 }
 #end_end{
-    position: absolute;
-    right: 20%;
-    top: 162%
+   padding-top: 10px;
+   color: white;
 }
 #secure_default{
-    position: absolute;
-    right: 27%;
-    top: 156%
+    padding-top: 30px;
+    color: white;
+    font-weight: 800;
 }
 #everything_happy{
-    padding-top: 1%;
+    padding-top: 8%;
 }
 #built_from{
     padding-top: 2%;
     padding-bottom: 2%;
+    color: gray;
+}
+/* FOOTER BEGAN */
+#footer{
+    width: 100%;
+}
+#footer_div{
+    width: 90%;
+    margin: 20px  auto;
+    padding: 5% 0px;
+    background-color: #0f766e;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#join_developers{
+    padding: 20px 0px;
+    font-size: 20px;
+    color: white;
+}
+#input_text{
+    width: 60%;
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: #6eb1ab;
+}
+#button_footer{
+    padding: 2.5%;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    margin: 2px;
+    color: #0f766e;
+    font-weight: 800;
+}
+#dont_miss{
+    color: white;
 }
