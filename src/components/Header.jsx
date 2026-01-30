@@ -8,19 +8,20 @@ function Header() {
         <nav id='navigation'>
             <div id='div1'>
               <div id='logo'>
-                <Link id='zap_img'><Zap />
+                <Link id='zap_img'>
+                  <Zap />
                 </Link>
                 </div>
-              <div id='devstream'>
+              <Link id='devstream'>
                 <h4 id='devstrem2'>DEVSTREAM</h4>
-              </div>
+              </Link>
             </div>
             <div id='div2'></div>
 
             <div id='div3'>
-              <div className='home_art'>Home</div>
-              <div className='home_art'>Article</div>
-              <div id='write_story'>Write a story</div>
+              <Link className='home_art' to="/">Home</Link>
+              <Link className='home_art' to="/Article">Article</Link>
+              <Link id='write_story' to="/AddStory">Write a story</Link>
             </div>
           
         </nav>

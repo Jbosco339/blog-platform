@@ -1,8 +1,17 @@
 import React from 'react'
+import Articles from './Articles'
 
 function ArticleDetails() {
   return (
-    <div>ArticleDetails</div>
+    <div>
+      <p>Articles</p>
+
+      <Articles/>
+      <Articles/>
+      <Articles/>
+    </div>
+  
+    
   )
 }
 
