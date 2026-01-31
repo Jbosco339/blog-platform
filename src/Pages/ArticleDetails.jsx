@@ -5,9 +5,6 @@ function ArticleDetails() {
   return (
     <div>
       <p>Articles</p>
-
-      <Articles/>
-      <Articles/>
       <Articles/>
     </div>
   
