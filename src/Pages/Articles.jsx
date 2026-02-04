@@ -11,6 +11,7 @@ function Articles() {
      <div>
       <Article_header/>
       <Article_card_component
+        id="1"
         featured = " Featured"
         date = "17-01-2026"
         title = "The Future of Web Design in 2025"
@@ -21,6 +22,7 @@ function Articles() {
         arrowimg = {image3}
       />
       <Article_card_component
+        id="2"
         featured = " Featured"
         date = "22-01-2026"
         title = "Minimalism as a Lifestyle"
@@ -31,6 +33,7 @@ function Articles() {
         arrowimg = {image3}
       />
       <Article_card_component
+      id="3"
         featured = " Featured"
         date = "20-02-2026"
         title = "Mastering Tailwind CSS Transitions"
@@ -41,6 +44,7 @@ function Articles() {
         arrowimg = {image3}
       />
       <Article_card_component
+        id="4"
         featured = " Featured"
         date = "08-03-2026"
         title = "The Future of Web Design in 2025"

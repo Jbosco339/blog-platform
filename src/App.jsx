@@ -7,6 +7,7 @@ import AddStory from './Pages/AddStory.jsx';
 import ArticleDetails from './Pages/ArticleDetails.jsx';
 import NotFound from './Pages/NotFound.jsx';
 import './App.css'
+import './MediaQuerry.css'
 
 function App() {
   

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Article_card_component({featured, title, date, authorName, authorNameInitial, paragraph, deleting, arrowimg,}) {
+function Article_card_component({id, featured, title, date, authorName, authorNameInitial, paragraph, deleting, arrowimg,}) {
   return (
     <section id='article_sec'>
       <div id='main_div'>
@@ -14,8 +14,8 @@ function Article_card_component({featured, title, date, authorName, authorNameIn
             <h4 id='featured'>{featured}</h4>
             <p id='date_jan'>{date}</p>
             </div>
-            <h2 id='deFuture'>{title}</h2>
-            <p id='artificial_intel'>{paragraph}</p>
+            <Link to={`/articles/${id}`} id='deFuture'>{title}</Link>
+            <Link to={`/articles/${id}`} id='artificial_intel'>{paragraph}</Link>
             <hr className='line_through'/>
 
             <div id='icons_divs'>
@@ -25,12 +25,12 @@ function Article_card_component({featured, title, date, authorName, authorNameIn
               </div>
 
               <div id='delete_andArrow'>
-                <div id='delete_icon'><img src={deleting} alt="" className='icon_images' />
+                <Link to={`/articles/${id}`} id='delete_icon'><img src={deleting} alt="" className='icon_images' />
                   
-                </div>
-                <div id='arrow_icon'><img src={arrowimg} alt="" className='icon_images'/>
+                </Link>
+                <Link to={`/articles/${id}`} id='arrow_icon'><img src={arrowimg} alt="" className='icon_images'/>
                   
-                </div>
+                </Link>
               </div>
             </div>
           </div>
