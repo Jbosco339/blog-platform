@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Article_card_component({id, featured, title, date, authorName, authorNameInitial, paragraph, deleting, arrowimg,}) {
   return (
@@ -14,7 +15,7 @@ function Article_card_component({id, featured, title, date, authorName, authorNa
             <h4 id='featured'>{featured}</h4>
             <p id='date_jan'>{date}</p>
             </div>
-            <Link to={`/articles/${id}`} id='deFuture'>{title}</Link>
+            <Link to={`/articles/${id}`} id='deFuture'>{title}</Link><br />
             <Link to={`/articles/${id}`} id='artificial_intel'>{paragraph}</Link>
             <hr className='line_through'/>
 

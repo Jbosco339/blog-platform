@@ -18,23 +18,18 @@ function HeroSection() {
                 </button>
               <button id='become_writer'>Become a Writer </button>
             </div>
+
+
             <div id='second_div'>
-              <div id='second_div_inner1'>
-                <div id='second_div_inner12'>
-                  <img src="/star.png" alt="" id='star'/>
-                  <p id='ai_assisted'>AI Assisted <br /> Content</p>
-                  
-                </div>
+              <div className='secon_divInners'>
+              <img src="/star.png" alt="" className='miniImage invert'/>
+              <h3 className='invert'>AI Assisted Content</h3>
               </div>
 
 
-              <div id='second_div_inner2'>
-                <div id='second_div_inner22'>
-                  <img src="/layout.png" alt="" id='layout'/>
-                  <p id='adaptive'>
-                    Adaptive <br /> Layouts
-                  </p>
-                </div>
+              <div className='secon_divInners2'>
+                <img src="/layout.png" alt="" className='miniImage'/>
+              <h3>Adaptive Layouts</h3>
               </div>
             </div>
           </article>

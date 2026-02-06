@@ -1,11 +1,11 @@
 import React from 'react'
-import Articles from './Articles'
+import Article_details22 from '../components/Article_details22'
 
 function ArticleDetails() {
   return (
     <div>
-      <p>Articles</p>
-      <Articles/>
+      
+      <Article_details22/>
     </div>
   
     

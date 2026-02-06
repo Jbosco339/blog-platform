@@ -22,6 +22,10 @@ function Header() {
               <Link className='home_art' to="/">Home</Link>
               <Link className='home_art' to="/Article">Article</Link>
               <Link id='write_story' to="/add-story">Write a story</Link>
+              
+            </div>
+            <div id='div4'>
+              <img src="/burger1.png" id='hamburger' alt="" />
             </div>
           
         </nav>
