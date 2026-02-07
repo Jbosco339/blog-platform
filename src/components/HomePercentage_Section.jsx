@@ -48,7 +48,7 @@ function Percentage_Section() {
                     <img src="/security.png" alt="" id='security' />
                     <h3 id='secure_default'>Secure by Default</h3>
                     <p id='end_end'>
-                        End-to-end encryption for all your <br /> private drafts.
+                        End-to-end encryption for all your private drafts.
                     </p>
                 </div>
             </div>

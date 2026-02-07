@@ -1,11 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Zap } from 'lucide-react'
+import { useState } from 'react'
+import Hamburger from './Hamburger'
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header id='header'>
-        <nav id='navigation'>
+        <nav id='navigation' >
+
+          {/* <div className='desktop_nav'>
+          <Link to ="/">Home</Link>
+          <Link to ="/Article">Article</Link>
+          <Link to ="/add-story">write a story</Link>
+        </div> */}
+        
+
             <div id='div1'>
               <div id='logo'>
                 <Link id='zap_img' to="/">
@@ -18,19 +29,22 @@ function Header() {
             </div>
             <div id='div2'></div>
 
-            <div id='div3'>
+            <div id='div3' >
               <Link className='home_art' to="/">Home</Link>
               <Link className='home_art' to="/Article">Article</Link>
               <Link id='write_story' to="/add-story">Write a story</Link>
               
             </div>
-            <div id='div4'>
+            <div id='div4' onClick={() =>  setMenuOpen(true)}>
               <img src="/burger1.png" id='hamburger' alt="" />
             </div>
           
         </nav>
+        <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <br />
+        
         <hr className='fullwidth_hr'/>
+        
     </header>
   
   )

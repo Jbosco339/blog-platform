@@ -328,7 +328,7 @@ body {
     width: 58%;
     background-color: rgb(4, 1, 30);
     color: white;
-    padding: 55px 25px;
+    padding: 46px 25px;
     margin: 1%;
     border-radius: 15px;
 }
@@ -727,3 +727,31 @@ body {
     padding: 8%;
     margin-top: 30px;
 }
+/* HAMBURGER BEGINS HERE */
+.hamburger-menu{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(15, 118, 110, 0.4);
+    transition: transform 0.5s ease;
+    display: flex;
+    z-index: 1000;
+    /* transform: translateX(120%); */
+}
+
+.close-btn{
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+
+.hamburger-menu.open{
+    transform: translateX(0);
+}
+
+
