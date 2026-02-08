@@ -5,7 +5,7 @@ function Hamburger({ menuOpen, setMenuOpen }) {
     if (!menuOpen) return null;
   return (
     
-            <div id='div3' className='hamburger-menu ${menuOpen ? "open" : ""}' >
+            <div id='' className=' hamburger-menu ${menuOpen ? "open" : ""}' >
                 <button 
                 className='close-btn'
                 onClick={() => setMenuOpen(false)}

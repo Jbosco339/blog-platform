@@ -86,7 +86,8 @@ body {
     color: gray;
 }
 #write_story{
-    width: 40%;
+    width: 38%;
+    font-size: 13px;
     background-color: black;
     text-align: center;
     color: white;
@@ -659,7 +660,7 @@ body {
 #hamburger{
     width: 30px;
     margin-left: 10px;
-    display: flex;
+    display: none;
     cursor: pointer;
 }
 
@@ -742,16 +743,17 @@ body {
     z-index: 1000;
     /* transform: translateX(120%); */
 }
-
 .close-btn{
     font-size: 24px;
     cursor: pointer;
     align-self: flex-end;
 }
-
-
 .hamburger-menu.open{
     transform: translateX(0);
 }
+
+
+
+
 
 

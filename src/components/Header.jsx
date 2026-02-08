@@ -8,14 +8,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header id='header'>
-        <nav id='navigation' >
-
-          {/* <div className='desktop_nav'>
-          <Link to ="/">Home</Link>
-          <Link to ="/Article">Article</Link>
-          <Link to ="/add-story">write a story</Link>
-        </div> */}
-        
+        <nav id='navigation' >   
 
             <div id='div1'>
               <div id='logo'>
@@ -29,7 +22,7 @@ function Header() {
             </div>
             <div id='div2'></div>
 
-            <div id='div3' >
+            <div id='div3'  className='desktop-nav' >
               <Link className='home_art' to="/">Home</Link>
               <Link className='home_art' to="/Article">Article</Link>
               <Link id='write_story' to="/add-story">Write a story</Link>

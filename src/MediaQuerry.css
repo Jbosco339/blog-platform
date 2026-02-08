@@ -108,20 +108,22 @@
         width: 48%;
         margin: 1px;
     }
+    #navigation{
+        justify-content: space-between;
+    }
     #sec2_art2{
         flex-direction: row;
         flex-wrap: wrap;
     }
-    /* .home_art,
-    #write_story{
-        display: none
-    } */
-    #div3{
-        display: none;
+   
+    .desktop-nav{
+        display: none !important;
     }
-   #navigation{
-    justify-content: space-between;
-   }
+    #hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
    #devstrem2{
     margin-left: 4.5rem;
    }
