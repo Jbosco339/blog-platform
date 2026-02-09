@@ -5,7 +5,7 @@ function Article_details22() {
     <section id='back2_section'>
         <div id='back2_div'>
         <div id='back_arrowdiv'>
-            <img src="/right.png" alt="" id='backArrow'/>
+            <img src="/back2.png" alt="" id='backArrow'/>
             <h3 id='back_2_Feed'>Back to Feed</h3>
         </div>
         <div id='initilas_div'>

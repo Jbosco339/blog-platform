@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Zap } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Hamburger from './Hamburger'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+  }, [menuOpen]);
   return (
     <header id='header'>
         <nav id='navigation' >   
@@ -16,6 +22,8 @@ function Header() {
                   <Zap />
                 </Link>
                 </div>
+                {menuOpen && (<div className='overlay' onClick={closeMenu}></div>)}
+
               <Link id='devstream' to="/">
                 <h4 id='devstrem2'>DEVSTREAM</h4>
               </Link>
