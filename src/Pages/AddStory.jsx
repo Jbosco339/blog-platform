@@ -1,132 +1,144 @@
 import React, { useState } from 'react'
-import Write_Story from '../components/Write_Story'
 import { useNavigate } from 'react-router-dom'
 
 function AddStory() {
+  // useNavigate lets us redirect the user programmatically
   const navigate = useNavigate()
 
+  // State to store all form input values
   const [formData, setFormData] = useState({
-    title: "",
-    narrative: "",
-    authorname: "",
-    authorabrev: "",
+    title: '',        // article headline
+    narrative: '',    // main story content
+    authorname: '',   // author's full name
+    authorabrev: '',  // author's abbreviation (initials)
   })
-  //state to show success message
-  const [successMessage, setSuccessMessage] = useState("")
 
-  //handle form submit
-  function handleSubmit (e){
+  // State to show a success message after publishing
+  const [successMessage, setSuccessMessage] = useState('')
+
+  // Runs when the form is submitted
+  function handleSubmit(e) {
+    // Prevents the browser from refreshing the page
     e.preventDefault()
 
+    // Create a new article object
     const newPost = {
-      id: Date.now(),
-      date: new Date().toDateString(),
-      title:formData.title,
-      write: formData.narrative,
-      authorName: formData.authorname,
-      authorAbrev: formData.authorabrev
+      id: Date.now(),                       // unique ID based on timestamp
+      date: new Date().toDateString(),      // readable date
+      title: formData.title,                // headline
+      write: formData.narrative,            // story content
+      authorName: formData.authorname,      // author name
+      authorAbrev: formData.authorabrev,    // author abbreviation
     }
-    //get the articles data from local storage (it returns a string or null)
-    const existingPosts = JSON.parse(localStorage.getItem('articles')) || []
-    //convert the string to a javascript array using JSON.parse()
-    //if nothing exists in localstorage yet (null), use an empty array instead
-    
-    //create a new array where the new post is placed at the begining
+
+    // Get existing articles from localStorage (or empty array if none)
+    const existingPosts =
+      JSON.parse(localStorage.getItem('articles')) || []
+
+    // Add the new article to the beginning of the list
     const updatedPost = [newPost, ...existingPosts]
-    //spread operator (...) copies all existing posts after the new post
 
-    //save the updated array back into localstorage
+    // Save updated articles list back to localStorage
     localStorage.setItem('articles', JSON.stringify(updatedPost))
-    //convert the array back to string using JSON.stringify()
-    //localstorage only stores data as strings
 
+    // Show success message
+    setSuccessMessage('Story published successfully!')
 
-    //show success message
-    setSuccessMessage('story published successfully!')
-
-    //wait 1.5 seconds before redirect
-    setTimeout (() =>{
-      navigate('/articles')
+    // Redirect to articles page after 1.5 seconds
+    setTimeout(() => {
+      navigate('/article')
     }, 1500)
   }
-  return (
-   <section id='addstory_wrapper'>
-    <form onSubmit={handleSubmit} className='story_section'>
-        <div className='story_main_div'>
-            <div className='publish'>
-            <h1 id='publish1'>Publish a Story</h1>
-            <p id='mind_today'>What's on your mind today?</p>
-        </div>
-        <div className='input_areas'>
-            <h4 id=''>HEADLINE</h4>
-            <input 
-            type="text" 
-            placeholder='e.g The Art of Minimalist UI' 
-            value={FormData.headline_input}
-            id='headline_input'
-            onChange={(e) =>
-                setFormData ({...FormData, headline_input: e.target.value })
-            }
-            />
-            
-            <h4>THE NARRATIVE</h4>
-            <textarea 
-            name="" 
-            id="text_area" 
-            cols='30'
-            rows='10'
-            placeholder='Once upon a time...'
-            value={formData.narrative}
-            onChange={(e) =>
-              setFormData({...formData, text_area: e.target.value})
-            }
-            ></textarea>
 
+  return (
+    <section id="addstory_wrapper">
+      {/* Form wrapper */}
+      <form onSubmit={handleSubmit} className="story_section">
+        <div className="story_main_div">
+          {/* Page heading */}
+          <div className="publish">
+            <h1 id="publish1">Publish a Story</h1>
+            <p id="mind_today">What's on your mind today?</p>
+          </div>
+
+          {/* Input fields */}
+          <div className="input_areas">
+            {/* HEADLINE INPUT */}
+            <h4>HEADLINE</h4>
+            <input
+              type="text"
+              placeholder="e.g The Art of Minimalist UI"
+              value={formData.title}
+              id="headline_input"
+              onChange={(e) =>
+                setFormData({ ...formData, title: e.target.value })
+              }
+            />
+
+            {/* STORY CONTENT */}
+            <h4>THE NARRATIVE</h4>
+            <textarea
+              id="text_area"
+              cols="30"
+              rows="10"
+              placeholder="Once upon a time..."
+              value={formData.narrative}
+              onChange={(e) =>
+                setFormData({ ...formData, narrative: e.target.value })
+              }
+            />
 
             {/* AUTHOR NAME */}
             <h4>AUTHOR NAME</h4>
-            <input 
-            type="text" 
-            placeholder='e.g William Shakes' 
-            value={formData.authorname}
-            id='author_name2'
-            onChange={(e) =>
-              setFormData({...formData, author_name2: e.target.value})
-            }
-            
+            <input
+              type="text"
+              placeholder="e.g William Shakes"
+              value={formData.authorname}
+              id="author_name2"
+              onChange={(e) =>
+                setFormData({ ...formData, authorname: e.target.value })
+              }
             />
-            <br /> <br /><br />
-            {/* AUTHOR ABBR */}
+
+            <br />
+            <br />
+            <br />
+
+            {/* AUTHOR ABBREVIATION */}
             <h4>AUTHOR ABBREVIATION</h4>
-            <input 
-            type="text" 
-            placeholder='Name Abbreviation e.g B.A' 
-            value={formData.authorname}
-            id='author_name3'
-            onChange={(e) =>
-              setFormData({...formData, author_name3: e.target.value})
-            }
-            
+            <input
+              type="text"
+              placeholder="Name Abbreviation e.g B.A"
+              value={formData.authorabrev}
+              id="author_name3"
+              onChange={(e) =>
+                setFormData({ ...formData, authorabrev: e.target.value })
+              }
             />
+          </div>
 
+          {/* Action buttons */}
+          <div className="story_buttons">
+            {/* Submits the form */}
+            <button id="publish_button" type="submit">
+              Publish Now
+            </button>
+
+            {/* Does nothing yet (future feature) */}
+            <button id="save_draft" type="button">
+              Save Draft
+            </button>
+          </div>
         </div>
 
-        <div className='story_buttons'>
-            <button id='publish_button' type='submit'>Publish Now</button>
-            <button id='save_draft' type='submit'>Save Draft</button>
-        </div>
-        </div>
-        {/* SUCCESS MESSAGE */}
+        {/* Success message shown after publishing */}
         {successMessage && (
-          <p style={{color: 'green', marginTop: '10px'}}>
+          <p style={{ color: 'green', marginTop: '10px' }}>
             {successMessage}
           </p>
         )}
-    </form>
-     <div>
-        {/* <Write_Story/> */}
-    </div>
-   </section>
+      </form>
+    </section>
   )
 }
 
