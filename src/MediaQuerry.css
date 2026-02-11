@@ -38,6 +38,7 @@
     }
     #become_writer{
         width: 38%;
+        font-size: 15px;
     }
     #real_time{
         font-size: 20px;
@@ -112,6 +113,16 @@
    #modern_standard{
     width: 90%;
    }
+   #words_matter{
+    font-size: 50px;
+   }
+   #start_reading{
+    width: 39%;
+    font-size: 12px;
+   }
+   #become_writer{
+    width: 39%;
+   }
 }
 /* For surface duo */
 @media screen and (max-width:540px) {
@@ -121,6 +132,9 @@
     }
     #curated_inner{
         width: 80%;
+    }
+    #delete_andArrow{
+        width: 19%;
     }
     #delete_icon{
         width: 60%;
@@ -206,6 +220,13 @@
    #back2_div{
     width: 90%;
    } 
+   #writername_and_initial{
+    width: 60%;
+   }
+   
+    .percentage_divs{
+        text-align: center;
+    }
 }
 /* For iphone 14 proMax */
 @media screen and (max-width:430px) {
@@ -259,6 +280,12 @@
         width: 10%;
     }
 }
+/* for pixel 7 */
+@media screen and (max-width:412px) {
+    #words_matter{
+        font-size: 43px;
+    }
+}
 /* For Samsung Galaxy S20 Ultra */
 @media screen and (max-width:412px) {
     
@@ -303,6 +330,9 @@
     #start_reading{
         width: 42%;
         font-size: 8px;
+    }
+    #words_matter{
+        font-size: 35px;
     }
 }
 /* For iphone 5/SE */

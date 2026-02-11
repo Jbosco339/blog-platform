@@ -89,6 +89,9 @@ body {
     cursor: pointer;
     color: gray;
 }
+.home_art:hover{
+    color: #0f766e;
+}
 #write_story{
     width: 34%;
     font-size: 11px;
@@ -100,6 +103,9 @@ body {
     padding-top: 7px;
     font-weight: bold;
     cursor: pointer;
+}
+#write_story:hover{
+    background-color: rgb(64, 63, 63);
 }
 /* HOME STYLING BEGINS HERE */
 #section1{
@@ -119,6 +125,7 @@ body {
 #second_div{
     width: 40%;
     /* background-color: lightgray; */
+    gap: 15px;
     display: flex;
     margin: 1px;
 }
@@ -159,6 +166,11 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+}
+#start_reading:hover{
+    background-color: #62a7a3;
+    color: black;
 }
 #become_writer{
     width: 35%;
@@ -170,6 +182,10 @@ body {
     color: black;
     font-size: 18px;
     font-weight: 800;
+    cursor: pointer;
+}
+#become_writer:hover{
+    background-color: #e0f3f2;
 }
 #arrow_img{
     width: 30px;
@@ -185,21 +201,31 @@ body {
     width: 48%;
     margin: auto;
     background-color: #0f766e;
-    padding: 45% 5% 5% 2% ;
+    padding: 26% 5% 5% 2% ;
     border-radius: 15px;
     margin-top: 7rem;
-    /* filter: invert(); */
+    transition: transform 0.3s ease;
+}
+#box1_paragraph{
+    color: lightgrey;
+}
+.secon_divInners:hover{
+    transform: rotate(-3deg);
 }
 .secon_divInners2{
     width: 48%;
     margin: auto;
     border: 1px solid lightgray;
     /* background-color: rgb(179, 113, 12); */
-    padding: 45% 5% 5% 2% ;
+    padding: 29% 5% 5% 2% ;
     border-radius: 15px;
     box-shadow: 0px 6px 15px rgba(15, 118, 110, 0.4);
-    /* filter: invert(); */
+    transition: transform 0.3s ease;
+   
 
+}
+.secon_divInners2:hover{
+    transform: rotate(3deg);
 }
 .invert{
     filter: invert();
@@ -289,7 +315,7 @@ body {
     margin: auto;
 }
 #sec2_blackdiv{
-    width: 58%;
+    width: 68%;
     background-color: rgb(4, 1, 30);
     color: white;
     padding: 46px 25px;
@@ -304,15 +330,16 @@ body {
     padding: 10px 30px;
 }
 #watch_ur_story{
+    width: 80%;
     color: lightgray;
     line-height: 1.5;
 }
 #real_time{
     padding-bottom: 3%;
-    font-size: 30px;
+    font-size: 35px;
 }
 #black_innerdiv{
-    width: 58%;
+    width: 88%;
 }
 #black_div2{
     width: 28%;
@@ -505,6 +532,7 @@ body {
     margin: 0px 10px;
     opacity: 0.3;
 }
+
 .icon_images:hover{
     background-color: violet;
     border-radius: 5px;
@@ -643,6 +671,7 @@ body {
 #back_2_Feed{
     margin-top: 5px;
     margin-left: 10px;
+    color: black;
 }
 #back2_section{
     width: 100%;
@@ -677,7 +706,8 @@ body {
 }
 #paragraph1{
     padding: 10px;
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 1.5;
     color: gray;
 }
 #paragraph2{
@@ -708,19 +738,18 @@ body {
     transition: transform 0.5s ease;
     display: flex;
     z-index: 1000;
-    /* transform: translateX(120%); */
-    
-}
-.hamburger-menu{
     width: 60%;
     height: 50vh;
     background-color: #0f766e;
     border-radius: 20px;
+    /* transform: translateX(120%); */
+    
 }
+
 .hamburger-menu #write_story{
     width: 80%;
     padding: 10px;
-    margin: 15px 1px;
+    /* margin: 15px 1px; */
     margin: 15px 1px 0px 30px;
 }
 .hamburger-menu .home_art{

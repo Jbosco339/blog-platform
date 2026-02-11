@@ -49,7 +49,7 @@ function Article_card_component({
 
             {/* Short preview of article content */}
             <Link to={`/articles/${id}`} id="artificial_intel">
-              {write?.slice(0, 120)}
+              {write?.slice(0, 120)}...
             </Link>
 
             {/* Visual separator */}
@@ -65,11 +65,12 @@ function Article_card_component({
               {/* Action icons */}
               <div id="delete_andArrow">
                 {/* DELETE ARTICLE BUTTON */}
-                <button id="delete_icon" onClick={handleDeleteClick}>
+                <button id="id='deleting_img'" onClick={handleDeleteClick}>
                   <img
                     src={deleting}
                     alt="delete"
                     className="icon_images"
+                    
                   />
                 </button>
 
