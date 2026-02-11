@@ -25,7 +25,7 @@ function Header() {
                 {menuOpen && (<div className='overlay' onClick={closeMenu}></div>)}
 
               <Link id='devstream' to="/">
-                <h4 id='devstrem2'>DEVSTREAM</h4>
+                <h4 id='devstrem2'>STORYTIMEX</h4>
               </Link>
             </div>
             <div id='div2'></div>
