@@ -65,7 +65,7 @@ function Article_card_component({
               {/* Action icons */}
               <div id="delete_andArrow">
                 {/* DELETE ARTICLE BUTTON */}
-                <button id="id='deleting_img'" onClick={handleDeleteClick}>
+                <button id="deleting_img" onClick={handleDeleteClick}>
                   <img
                     src={deleting}
                     alt="delete"

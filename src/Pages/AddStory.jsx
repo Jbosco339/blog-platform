@@ -67,7 +67,7 @@ function AddStory() {
             <h4>HEADLINE</h4>
             <input
               type="text"
-              placeholder="e.g The Art of Minimalist UI"
+              placeholder="e.g Consistency Pays"
               value={formData.title}
               id="headline_input"
               onChange={(e) =>
